@@ -103,16 +103,16 @@ DATABASES = {
     "default": {
         "ENGINE": "django.db.backends.sqlite3",
         "NAME": os.path.join(BASE_DIR, "db.sqlite3"),
-    }
-    # "default": {
-    #     "ENGINE": "django.db.backends.postgresql",
-    #     "NAME": os.environ.get("POSTGRES_DB", "equipment"),
-    #     "TEST": {"NAME": os.environ.get("POSTGRES_TEST_DB", "test")},
-    #     "USER": os.environ.get("POSTGRES_USER", "test"),
-    #     "PASSWORD": os.environ.get("POSTGRES_PASSWORD", "123456"),
-    #     "HOST": os.environ.get("POSTGRES_DB_URL", "127.0.0.1"),
-    #     "PORT": os.environ.get("POSTGRES_DB_PORT", "5432"),
-    # },
+    },
+    "default2": {
+        "ENGINE": "django.db.backends.postgresql",
+        "NAME": os.environ.get("POSTGRES_DB", "drawing"),
+        "TEST": {"NAME": os.environ.get("POSTGRES_TEST_DB", "test")},
+        "USER": os.environ.get("POSTGRES_USER", "test"),
+        "PASSWORD": os.environ.get("POSTGRES_PASSWORD", "123456"),
+        "HOST": os.environ.get("POSTGRES_DB_URL", "127.0.0.1"),
+        "PORT": os.environ.get("POSTGRES_DB_PORT", "5432"),
+    },
 }
 
 # RabbitMQ Config
